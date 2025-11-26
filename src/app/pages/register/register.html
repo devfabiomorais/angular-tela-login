@@ -1,0 +1,34 @@
+<div class="auth-container">
+
+  <!-- LOGO -->
+  <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo" class="logo" />
+
+  <!-- CARD -->
+  <div class="auth-card">
+
+    <h2 class="title">Criar Conta</h2>
+
+    <!-- LOGIN -->
+    <input type="text" placeholder="Login" [(ngModel)]="login" class="input" />
+
+    <!-- SENHA -->
+    <input type="password" placeholder="Senha" [(ngModel)]="senha" class="input" />
+
+    <!-- CONFIRMAR SENHA -->
+    <input type="password" placeholder="Confirmar senha" [(ngModel)]="confirmarSenha" class="input" />
+
+    <!-- BOTÃO CADASTRAR -->
+    <button class="btn-cadastrar" (click)="registrar()">
+      Criar conta
+    </button>
+
+    <h2 class="subtitle">Já tem uma conta?</h2>
+
+    <!-- VOLTAR PARA LOGIN -->
+    <button class="btn-entrar" routerLink="/">
+      Fazer login
+    </button>
+
+  </div>
+
+</div>

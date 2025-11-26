@@ -1,0 +1,40 @@
+<div class="auth-container">
+
+  <!-- LOGO -->
+  <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo" class="logo" />
+
+  <!-- LOADING GIF -->
+  <div *ngIf="carregando" class="loading-overlay">
+    <img src="https://i.gifer.com/ZZ5H.gif" class="loading-gif">
+  </div>
+
+  <!-- CARD -->
+  <div class="auth-card">
+
+    <h2 class="title">Entrar</h2>
+
+    <!-- LOGIN -->
+    <input type="text" placeholder="Login" [(ngModel)]="login" class="input" />
+
+    <!-- SENHA -->
+    <input type="password" placeholder="Senha" [(ngModel)]="senha" class="input" />
+
+    <!-- ESQUECI MINHA SENHA -->
+    <button class="btn-esqueci" routerLink="/recuperar-senha">
+      Esqueci minha senha
+    </button>
+
+    <!-- BOTÃO ENTRAR -->
+    <button class="btn-entrar" (click)="entrar()">
+      Entrar
+    </button>
+
+    <h2 class="subtitle">É novo por aqui?</h2>
+    <!-- CADASTRAR-SE -->
+    <button class="btn-cadastrar" routerLink="/cadastro">
+      Cadastre-se
+    </button>
+
+  </div>
+
+</div>

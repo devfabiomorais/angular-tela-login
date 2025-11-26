@@ -1,0 +1,81 @@
+/* Container principal */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Logo Angular */
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Título */
+.title {
+  font-size: 28px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Subtítulo */
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Container das caixas */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Caixa */
+.card {
+  width: 220px;
+  height: 160px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hover */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos das caixas */
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+/* Texto */
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Diferente para cada opção */
+.comprar {
+  background-color: #ffeb3b;
+  /* amarelo tipo Mercado Livre */
+}
+
+.vender {
+  background-color: #c8e6c9;
+  /* verde claro */
+}

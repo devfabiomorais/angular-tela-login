@@ -1,0 +1,119 @@
+/* Container geral */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Logo Angular */
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Card */
+.auth-card {
+  width: 320px;
+  padding: 30px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Título do card */
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Título do card */
+.subtitle {
+  text-align: center;
+  margin-bottom: -5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border .2s ease;
+}
+
+.input:focus {
+  border-color: #ffeb3b;
+  /* amarelo ML */
+  outline: none;
+}
+
+/* Botão Entrar */
+.btn-entrar {
+  width: 100%;
+  padding: 12px;
+  background: #ffeb3b;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.btn-entrar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Botão Esqueci minha senha */
+.btn-esqueci {
+  border: none;
+  background: transparent;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: opacity .12s ease;
+}
+
+.btn-esqueci:hover {
+  opacity: 0.7;
+}
+
+/* Botão Cadastre-se */
+/* Mantém estilo parecido com o de login */
+.btn-cadastrar {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #2ecc71;
+  /* cor verde */
+  color: white;
+  transition: 0.3s ease;
+}
+
+
+/* efeito hover */
+.btn-cadastrar:hover {
+  background-color: #27ae60;
+}
